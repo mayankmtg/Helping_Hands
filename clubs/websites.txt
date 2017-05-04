@@ -1,0 +1,6 @@
+foobar:foobar.iiitd.edu.in,https://www.facebook.com/iiitdfoobar?fref=ts
+byld:byld.iiitd.edu.in,https://www.facebook.com/byld.iiitd?fref=ts
+tasveer:https://www.facebook.com/tasveeriiitd
+trivialis:https://www.facebook.com/trivialis.iiitd?fref=ts
+ink:https://www.facebook.com/ink.iiitd?fref=ts
+adventure:https://www.facebook.com/AdventureClubIiitd?fref=ts

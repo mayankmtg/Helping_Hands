@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"> <!-- For intranet testing only, remove in production. -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <title>Helping Hand</title>
+
+</head>
+
+<body>
+<table width="80%" border="0">
+  <tr>
+    <td><img src="layer1.jpg" width="1347" height="258" /></td>
+  </tr>
+  <tr>
+    <td><div id="slideShowImages">
+    <img src="1.jpg" alt="Slide 1" />
+    <img src="3.jpg" alt="Slide 2" />
+    <img src="4.jpg" alt="Slide 3" />    
+    <img src="5.jpg" alt="Slide 4" />        
+  </div>  <script src="slideShow.js"></script></td>
+  <td>
+  <?php ob_start();?>
+	<body text="red">
+	<div align="right">
+<form method="get" action="https://www.google.com/search">
+<input type="text" name="q" size="31" value="">
+</form>
+</div>
+	<div id="wrapper">
+	<div class="login">
+	<?php
+	if(isset($_POST['username']) AND isset($_POST['password']))
+	{
+	$user="Viraj";
+	$password="Viraj96";
+	if($_POST['username']=="Viraj" AND $_POST['password']=="Viraj96")
+	{
+		header('Location:home.php');
+	}
+	else{
+?>
+	<div class="error">Incorrect username or password</div> 
+	<?php
+		}
+		}
+	?>
+
+<div align ="right" >
+<h1>LOGIN</h1>
+<form action="login.php" method="post">
+<h4>Username</h4>
+<input type="text" name="username"/>
+<h4>Password</h4>
+<input type="password" name="password"/>
+<p>
+<input type ="submit" value="LOGIN" />
+</p>
+</div>
+</form>
+</div>
+</div>
+</body>
+  </td>
+  </tr>
+  <tr>
+    <td><img src="welcome.jpg" width="1347" height="350" /></td>
+  </tr>
+  <tr>
+    <td align="center"><img onClick="alert('Please Login First')" src="btnh+m.jpg" width="449" height="350" /><img onClick="alert('Please Login First')" src="btne.jpg" width="449" height="350" /><img onClick="alert('Please Login First')" src="btnc.jpg" width="449" height="350" /></td>
+  </tr>
+  <tr>
+    <td><img src="about.jpg" width="1349" height="444" /></td>
+  </tr>
+</table>
+</body>
+</html>
